@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core import views as album_list
+from core import views as core_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', album_list, name='album_list')
+    path('', core_views.album_list, name='album_list'),
+    
+   
 ]
