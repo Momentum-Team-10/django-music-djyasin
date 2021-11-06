@@ -4,7 +4,7 @@ from .models import Album
 
 def album_list(request):
     albums = Album.objects.all()
-    return render(request, "templates/album_list.html",
+    return render(request, "albums/album_list.html",
                   {"albums": albums})
 
 
