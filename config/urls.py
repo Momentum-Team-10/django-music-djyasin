@@ -20,6 +20,6 @@ from core import views as core_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', core_views.album_list, name='album_list'),
-    
+    path('add_album', core_views.add_album, name='add_album'),
    
 ]
